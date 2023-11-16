@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible:regular,italic,700,700italic);
+
+*{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    background-color: #0c0a0e;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fcaa40;
+    border-radius: 10px;
+}
+
+.header-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+    border-bottom: solid #FCAA40 1px;
+}
+
+.header-box img{
+    height: 6vh;
+}
+
+.icon{
+    border: #FCAA40 solid 2px;
+}
+
+.nav-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.nav-box img{
+    height: 7vh;
+}
+
+.ul-box{
+    display: flex;
+    gap: 6vw;
+}
+
+.ul-box a{
+    color: #FFDAC3;
+    font-size: 2.5vh;
+    font-family: 'Roboto';
+    transition: 0.2s;
+}
+
+.ul-box a:hover{
+    color: #FCAA40;
+}
+
+@media (max-width: 750px) {
+    .header-box{
+        justify-content: center;
+        gap: 10vw;
+    }
+
+    .ul-box a{
+        font-size: 2vh;
+    }
+}
+
+/*MAIN*/
+.main-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    background-color: #0c0a0e;
+    padding: 5vh;
+    gap: 5vw;
+}
+
+.main-box h2{
+    color: #fc9443;
+    font-family: 'Atkinson Hyperlegible';
+    font-weight: bold;
+    font-size: 7vh;
+}
+
+.main-box p, label, h3{
+    color: white;
+    font-size: 4vh;
+    font-weight: 200;
+    font-family: 'Atkinson Hyperlegible';
+}
+
+.main-box h3{
+    font-weight: bold;
+}
+
+.main-box iframe{
+    width: 35vw;
+    height: 35vh;
+    background-color: #413150;
+    padding: 1vw;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form-box{
+    display: flex;
+    width: 45%;
+    gap: 10vh;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.form span{
+    color: #F15F3D;
+}
+
+.form input, .form textarea{
+    height: 6vh;
+    border-radius: 1vh;
+    background-color: #322837;
+    font-size: 2.2vh;
+    color: whitesmoke;
+    margin-bottom: 4vh;
+    font-family: 'Roboto';
+    border: none;
+}
+
+.form textarea{
+    height: 13vh;
+    resize: none;
+}
+
+.form button{
+    height: 5vh;
+    background-color: #f15f3d;
+    color: white;
+    border: none;
+    font-size: 3vh;
+    border-radius: 1vh;
+    width: 15vh;
+    transition: 0.2s;
+}
+
+.form button:hover{
+    background-color: #8f3521;
+    color: whitesmoke;
+}
+
+.text-box{
+    display: flex;
+    width: 45%;
+    gap: 6.8vh;
+    flex-direction: column;
+}
+
+@media (max-width: 750px) {
+    .main-box{
+        flex-direction: column;
+        height: fit-content;
+        padding: 50px;
+        align-items: center;
+        justify-content: center;
+        gap: 10vh;
+    }
+    .main-box h2{
+        font-size: 6vh;
+    }
+    .main-box p, h3{
+        padding: 0 5px;
+    }
+    .form-box{
+        width: fit-content;
+        gap: 5vh;
+        flex-direction: column;
+    }
+    .text-box{
+        align-items: center;
+        width: fit-content;
+        gap: 5vh;
+        flex-direction: column;
+    }
+    .main-box iframe{
+        width: 80vw;
+    }
+}
+
+/*FOOTER*/
+.footer-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.footer-box img{
+    height: 9vh;
+}
+
+.footer-box hr{
+    border: #FCAA40 solid 1px;
+    width: 20vw;
+}
+
+.footer-box p{
+    color: #DF7D3E;
+    background-color: #391209;
+    font-family: 'Roboto';
+    width: 100%;
+    font-size: 1.5vh;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    margin-top: 1vh;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.footer-links a{
+    color: #FFDAC3;
+    font-family: 'Roboto';
+    font-size: 1.1vw;
+    transition: 0.2s;
+}
+
+.footer-links a:hover{
+    color: #DF7D3E;
+}
+
+@media (max-width: 750px) {
+
+    .footer-box img{
+        height: 9vh;
+    }
+
+    .footer-box p{
+        font-size: 1.1vh;
+    }
+
+    .footer-links a{
+        font-size: 2vh;
+    }
+
+}
